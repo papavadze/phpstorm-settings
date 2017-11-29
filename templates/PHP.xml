@@ -1,0 +1,57 @@
+<templateSet group="PHP">
+  <template name="dump" value="dump($SELECTION$);&#10;die;" description="Symfony's dump function" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="vard" value="var_dump($SELECTION$);&#10;die;" description="var_dump function" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="printr" value="print_r($SELECTION$);&#10;die;" description="print_r function" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="php" value="?&gt;&#10;$END$&#10;&lt;?php" description="?&gt; &lt;?php" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ifdebug" value="if (DEBUG_MODE) {&#10;    $END$&#10;}" description="if debug expr" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ifipin" value="if (in_array(\$_SERVER['REMOTE_ADDR'], array('92.241.86.122', '95.104.105.5'))) {&#10;    $END$&#10;}" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="phpe" value="&lt;?= $END$ ?&gt;" description="php echo expr" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="iniset_soap" value="ini_set('soap.wsdl_cache_enabled', 0);&#10;ini_set('soap.wsdl_cache_ttl', 0);" description="ini_set soap commands" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="iniset_memory" value="ini_set('max_execution_time', 0);&#10;ini_set('memory_limit', -1);" description="ini_set memory commands" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="iniset_error" value="ini_set('log_errors', 1);&#10;ini_set('error_log', 'error.log');&#10;ini_set('error_reporting', E_ALL ^ E_NOTICE);&#10;ini_set('display_errors', 1);" description="ini_set error reporting  commands" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="arrow" value="-&gt;" description="-&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
